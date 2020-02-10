@@ -22,5 +22,5 @@ for i in range(len(board)):
                     exit()
         isSudoku.append(True)
     
-print('Sudoku' if any(isSudoku) else 'Sad Aku.')
+print('Sudoku!' if any(isSudoku) else 'Sad Aku.')
 
