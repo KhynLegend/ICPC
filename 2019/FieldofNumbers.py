@@ -11,7 +11,7 @@ for i in range(len(board)):
 
 isSudoku = []
 
-#checkColums
+#checkColumns
 for i in range(len(board)):
     if any([re.match('[0-9]', str(j)) and (j <= 9 and j >= 0) for j in board[i]]):
         #check row duplicates
@@ -22,5 +22,5 @@ for i in range(len(board)):
                     exit()
         isSudoku.append(True)
     
-print('Sudoku' if any(isSudoku) else 'Sad Aku')
+print('Sudoku' if any(isSudoku) else 'Sad Aku.')
 
